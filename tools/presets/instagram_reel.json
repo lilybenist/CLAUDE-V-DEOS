@@ -1,0 +1,12 @@
+{
+  "name": "Instagram Reel",
+  "description": "H.264 para Instagram Reels, 9:16 vertical, 1080x1920",
+  "ffmpeg_args": [
+    "-c:v", "libx264", "-crf", "23", "-preset", "slow",
+    "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920",
+    "-pix_fmt", "yuv420p",
+    "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
+    "-movflags", "+faststart",
+    "-t", "90"
+  ]
+}

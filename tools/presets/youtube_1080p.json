@@ -1,0 +1,12 @@
+{
+  "name": "YouTube 1080p",
+  "description": "H.264 optimizado para YouTube, 1080p, audio stereo",
+  "ffmpeg_args": [
+    "-c:v", "libx264", "-crf", "20", "-preset", "slow",
+    "-profile:v", "high", "-level", "4.1",
+    "-vf", "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2",
+    "-pix_fmt", "yuv420p",
+    "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
+    "-movflags", "+faststart"
+  ]
+}

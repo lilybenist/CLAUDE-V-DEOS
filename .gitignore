@@ -1,0 +1,73 @@
+# ── Videos originales (nunca subir a git) ─────────────────────────────────────
+originals/
+temp/
+
+# ── Renders y exports pesados ─────────────────────────────────────────────────
+exports/master/
+exports/youtube/*.mp4
+exports/youtube/*.mov
+exports/instagram/*.mp4
+exports/instagram/*.mov
+
+# ── Archivos de video y audio en cualquier lugar ──────────────────────────────
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.wmv
+*.flv
+*.m4v
+*.ts
+*.mts
+*.m2ts
+*.vob
+*.mpg
+*.mpeg
+*.3gp
+*.ogv
+*.mp3
+*.wav
+*.aac
+*.flac
+*.ogg
+*.m4a
+*.opus
+*.wma
+
+# ── Imágenes grandes (mantener solo assets pequeños) ─────────────────────────
+*.psd
+*.ai
+*.xcf
+
+# ── Archivos de proyectos de edición binarios ──────────────────────────────────
+*.kdenlive~
+*.blend1
+*.aep
+*.prproj
+
+# ── Sistema operativo ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# ── Logs y temporales ─────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# ── Excepciones: mantener estructura de carpetas ──────────────────────────────
+!**/.gitkeep
+!exports/youtube/.gitkeep
+!exports/instagram/.gitkeep
+!exports/master/.gitkeep
